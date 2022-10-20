@@ -10,12 +10,13 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Lexend Deca", sans-serif;
-}
+ }
 
 /* typography */
 
 h1 {
   color: var(--Background-heading-button-VLG);
+  font-family: 'Big Shoulders Display', cursive;
 }
 
 p {
