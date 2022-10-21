@@ -18,6 +18,7 @@ main {
   gap: 0.5em;
   margin: 2rem;
   width: clamp(30rem, 50%, 40rem);
+  transition: 0.6s;
   grid-template-areas:
     "a a a a b b"
     "c c c d d d"
@@ -29,6 +30,7 @@ div {
   text-align: center;
   display: grid;
   place-content: center;
+  transition: 0.6s;
 }
 
 div:nth-child(1) {
@@ -83,9 +85,9 @@ button {
   box-shadow: inset -1px -1px 9px hsla(179, 100%, 13%, 0.426), 1px 1px 2px #888;
   color: hsl(31, 77%, 52%);
   border: 5px solid #e8ecf2;
-  transition: .5s;
+  transition: 0.5s;
   cursor: pointer;
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: "Lexend Deca", sans-serif;
 }
 button:hover {
   box-shadow: inset -1px -1px 3px hsla(179, 100%, 13%, 0.426), 1px 1px 2px #888;
@@ -93,12 +95,49 @@ button:hover {
   border: 5px solid #e8ecf2;
 }
 
-i{
+i {
   color: grey;
-  padding-right: .5em;
+  padding-right: 0.5em;
 }
 
 footer {
   position: absolute;
   bottom: 50px;
+}
+
+/* mobile */
+
+@media (max-width: 580px) {
+  main {
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d"
+      "e";
+  }
+
+  footer {
+    bottom: 10px;
+  }
+
+  div:nth-child(1) {
+    background: #e8ecf2;
+    box-shadow: inset 1px 1px 5px #999;
+  }
+  div:nth-child(2) {
+    background: #e8ecf2;
+    box-shadow: inset 1px 1px 5px #777;
+  }
+  div:nth-child(3) {
+    background: #e8ecf2;
+    box-shadow: inset 1px 1px 5px #666;
+  }
+  div:nth-child(4) {
+    box-shadow: inset 1px 1px 6px #333;
+  }
+  div:nth-child(5) {
+    background: #e8ecf2;
+    box-shadow: inset 1px 1px 6px #111;
+  }
 }
