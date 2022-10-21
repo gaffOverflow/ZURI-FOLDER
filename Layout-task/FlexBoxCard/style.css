@@ -9,8 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Lexend Deca", sans-serif;
- }
+}
 
 /* typography */
 
@@ -21,8 +20,19 @@ h1 {
 
 p {
   color: var(--paragraph-TW);
-  line-height: 30px;
+  line-height: 25px;
   padding-right: 2em;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+footer p {
+  color: var(--VeryDarkCyan);
+  font-weight: 400;
+}
+
+a{
+  text-decoration: none;
+  color: var(--BrightOrange);
 }
 
 /* body */
@@ -31,6 +41,7 @@ body {
   background: var(--Background-heading-button-VLG);
   padding: 3em 14em;
   min-width: 667px;
+  position: relative;
 }
 
 /* main */
@@ -41,6 +52,13 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* cards */
@@ -135,9 +153,9 @@ button {
 @media (min-width: 1348px) {
   body {
     height: 100vh;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .first-card {
