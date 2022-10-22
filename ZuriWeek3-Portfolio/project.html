@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- style -->
+
+  <style>
+    * {
+      font-family: "Josefin Sans", sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Nav Menu */
+
+    nav {
+      display: block;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1em;
+      box-shadow: 0 1.5px 12px #ddd;
+      height: 100px;
+      width: 100vw;
+      background: #000;
+      position: fixed;
+      z-index: 10;
+    }
+
+    /* Logo */
+
+    .logo {
+      font-size: 2rem;
+      color: #f20272;
+      font-weight: 700;
+      padding-left: 2rem;
+    }
+
+    .logo2 {
+      color: #adff0a;
+    }
+
+    /* contact */
+
+    .contact {
+      position: relative;
+    }
+
+    .contact::after {
+      content: "";
+      display: block;
+      width: 70px;
+      height: 3px;
+      background: #f20272;
+      border-radius: 20px;
+      position: absolute;
+      left: -4px;
+      bottom: -10px;
+    }
+
+    ul {
+      display: flex;
+    }
+
+    li {
+      list-style: none;
+      padding: 0 1em;
+    }
+
+    a {
+      text-decoration: none;
+      display: block;
+      color: #fff;
+    }
+
+    .project {
+      background: #f20272;
+      padding: 0.9em 3em;
+      border-radius: 20px;
+    }
+
+    body {
+      background: #222222;
+    }
+
+    .cards {
+      width: 100px;
+      height: 100px;
+      border-radius: 6px;
+      box-shadow: 2px 2px 20px #adff0a4a;
+      position: relative;
+    }
+
+    main {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      height: 100vh;
+      padding: 140px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .cards p {
+      text-align: center;
+    }
+
+    /* footer */
+
+    footer {
+      background: #000;
+      margin: -10px;
+      color: #bbb;
+      padding: 3em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    footer i {
+      color: #000;
+      font-size: 1rem;
+      display: block;
+      margin: 10px;
+      padding: 5px;
+      background: #eee;
+      border-radius: 50%;
+    }
+
+    footer a {
+      display: inline;
+    }
+
+    main i {
+      font-size: 50px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      translate: -50% -50%;
+
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <span class="logo2">Port</span>folio
+      </div>
+      <ul>
+        <li><a href="/index.html?#">Home</a></li>
+        <li><a href="/index.html?#about-me">ABout Me</a></li>
+        <li><a href="#footer" class="contact">Contact</a></li>
+        <li><a href="/index.html?#our-service">Service</a></li>
+      </ul>
+
+      <div>
+        <li><a href="/project.html" class="project">Project</a></li>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <a href="https://codepen.io/your-work/" class="cards"><i class="fa-solid fa-file"></i>
+      <p>One</p>
+    </a>
+
+    <a href="https://codepen.io/laru18/pen/NWMzJyw" class="cards"><i class="fa-solid fa-file"></i>
+      <p>
+        Two
+      </p>
+    </a>
+    <a href="https://replit.com/@Laru18/Form-page?v=1" class="cards">
+    <i class="fa-solid fa-file"></i>
+      <p>Three</p>
+    </a>
+    <a href="https://codepen.io/laru18/pen/GRdOQdQ" class="cards">
+      <i class="fa-solid fa-file"></i>
+      <p>Four</p>
+    </a>
+    <a href="https://codepen.io/laru18/pen/WNJajrL" class="cards">
+<i class="fa-solid fa-file"></i>
+     <p>Five</p>
+    </a>
+  </main>
+
+  <!-- footer -->
+
+  <footer id="footer">
+    <h3>Gaffar Ibrahim</h3>
+    <p>For more HTML, CSS, and coding tutorial. Please click on the link below</p>
+    <div class="contact">
+      <a href=""><i class="fa-solid fa-envelope"></i></a>
+      <a href="https/twitter.com/larusunlimited" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+      <a href=""><i class="fa-brands fa-github"></i></a>
+      <a href="#contact"><i class="fa-solid fa-phone"></i>0815-110-6939</a>
+
+    </div>
+  </footer>
+</body>
+
+</html>
